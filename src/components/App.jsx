@@ -1,6 +1,7 @@
 import React from 'react';
 import 'components/App.css';
 import ColorPicker from './ColorPicker';
+import Counter from './Counter';
 
 const colorPickerOptions = [
   { label: 'red', color: '#F44336' },
@@ -17,6 +18,10 @@ export default class App extends React.Component {
 
     return (
       <div className='App'>
+        <Counter
+          initialValue={0}
+        />
+
         <ColorPicker
           options={colorPickerOptions}
         />

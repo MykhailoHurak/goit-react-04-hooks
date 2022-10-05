@@ -1,6 +1,8 @@
+// import React from 'react';
 import { useState } from 'react';
 import './ColorPicker.css';
 
+// Hooks ==============================================================
 export default function ColorPicker({ options }) {
 
     const [activeButtonIndex, setActiveButtonIndex] = useState(0);
@@ -52,6 +54,7 @@ export default function ColorPicker({ options }) {
     )
 };
 
+// Live Cycles ========================================================
 // class OldColorPicker extends React.Component {
 //     state = {
 //         activeButtonIndex: 0,
@@ -82,7 +85,6 @@ export default function ColorPicker({ options }) {
 //                 <div className='colorPicker__buttonBox'>
 //                     {this.props.options.map(({ label, color }, index) => {
 //                         const buttonClassName = this.makeButtonClassName(index);
-
 //                         return (
 //                             <button
 //                                 className={buttonClassName}
@@ -95,8 +97,8 @@ export default function ColorPicker({ options }) {
 //                     })}
 //                 </div>
 //             </div>
-//         )
-//     }
-// }
+//         );
+//     };
+// };
 
 // export default ColorPicker;
